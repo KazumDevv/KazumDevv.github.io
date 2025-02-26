@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gato ASCII com Flor</title>
+    <style>
+        body {
+            font-family: monospace;
+            white-space: pre;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .cat {
+            font-size: 16px; /* Aumentei o tamanho da fonte */
+            line-height: 18px; /* Ajustei a altura da linha */
+            color: #333;
+        }
+        .flower {
+            display: none; /* Inicialmente escondido */
+            font-size: 30px; /* Aumentei o tamanho da flor */
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 style="font-size: 100px;">:)</h1> <!-- Aumenta o tamanho do h1 diretamente no HTML -->
-        <p style="font-size: 50px;">&#127803;</p> <!-- Florzinha no p com tamanho ajustado -->
+    <div class="cat">
+         /\___/\
+        (˶ᵔ ᵕ ᵔ˶)
+        /  >🌼<\~⁠♡
+        <span class="flower">🌼</span> <!-- Flor -->
     </div>
-    
 
-    
+    <script>
+        // Função para mostrar a flor após 10 segundos
+        setTimeout(function() {
+            document.querySelector('.flower').style.display = 'inline';
+        }, 10000); // 10000 milissegundos = 10 segundos
+    </script>
 </body>
 </html>
